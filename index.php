@@ -27,15 +27,15 @@ $dirUtil = new DirectoryUtil( $config );
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Title</title>
+	<title>Directory Utility class - PHP</title>
 </head>
 <body>
 
 <?php 
 
 // Print out an ordered list of HTML links, pointing to the directory items
-// You can pass "ul" instead if you prefer
-echo $dirUtil->listItems( "ol" );
+// You can pass 'ul' instead of 'ol', if you prefer
+echo $dirUtil->listItems( 'ol' );
 
 ?>
 
