@@ -1,7 +1,10 @@
 <?php
 
+// Include the PHP class
 require 'directoryUtil.php';
 
+// Apply any custom settings
+// Listed below are the default settings - so feel free to omit them
 $config = array(
 	'directory' => './',
 	
@@ -15,6 +18,7 @@ $config = array(
 	'showHiddenFiles' => false
 );
 
+// Instantiate the class
 $dirUtil = new DirectoryUtil( $config );
 
 ?>
@@ -27,7 +31,13 @@ $dirUtil = new DirectoryUtil( $config );
 </head>
 <body>
 
-<?php echo $dirUtil->listItems("ol"); ?>
+<?php 
+
+// Print out an ordered list of HTML links, pointing to the directory items
+// You can pass "ul" instead if you prefer
+echo $dirUtil->listItems( "ol" );
+
+?>
 
 </body>
 </html>
